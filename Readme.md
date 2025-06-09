@@ -9,6 +9,8 @@ This repository provides code for Master Rules from Chaos: Learning to Reason, P
 
 ## Dataset Generation
 
+To speed up, random patterns for the tangram are pre-generated using the code in the folder util_code
+
 ## Training
 
 `policy_train_rl.py` launches training with stable-baselines3. A typical invocation is:
