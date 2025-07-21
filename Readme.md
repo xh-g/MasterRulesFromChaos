@@ -33,3 +33,11 @@ Pretrained RL policies (`4-1.zip`, `5-1.zip`, etc.) can be loaded using `stable_
 ## License
 
 This project is licensed under the Apache 2.0 License. See `LICENSE` for details.
+## 补充说明
+- 文件说明
+  - rl_env.py 是环境实现的关键程序
+    - def spawnobjects(): 随机生成带有随机初始位姿的对象
+    - def build_environment(): 用于训练和推理过程中通过加载bullet文件创建仿真环境，实现仿真环境初始化
+    - def step() : 用于仿真环境的步进，定义智能体与环境交互的接口
+    - def build_and_save_environment(): 用于预先创建随机bullet环境并保存，以便加速训练过程
+    - def drop_ground_objects(): 添加引力，使得地面上的物体聚集在地面中心
