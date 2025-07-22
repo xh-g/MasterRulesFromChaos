@@ -41,3 +41,5 @@ This project is licensed under the Apache 2.0 License. See `LICENSE` for details
     - def step() : 用于仿真环境的步进，定义智能体与环境交互的接口
     - def build_and_save_environment(): 用于预先创建随机bullet环境并保存，以便加速训练过程
     - def drop_ground_objects(): 添加引力，使得地面上的物体聚集在地面中心
+  - policy_train_rl.py RL训练策略网络
+    
